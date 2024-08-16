@@ -1,0 +1,38 @@
+<main class="flex-shrink-0">
+  <div class="container">
+    <h1 class="mt-5">Lista de departamentos</h1>
+    <table class="table table-striped table-responsive">
+      <thead class="table-dark">
+        <tr>
+          <th>#</th>
+          <th>Nombre</th>
+          <th>Ubicacion</th>
+          <th>Extension</th>
+          <th>Jefe Departamento</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody class="table-light table-striped" id="tableProveedores">
+        @for (departamento of listaDepartamentos; track $index){
+        <tr>
+          <td>{{ $index + 1 }}</td>
+          <td>{{ departamento.nombre }}</td>
+          <td>{{ departamento.ubicacion }}</td>
+          <td>{{ departamento.extension }}</td>
+          <td>{{ departamento.jefe_departamento }}</td>
+          <td>
+            <button type="button" class="btn btn-warning">Edit</button> |
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              (click)="eliminarDepartamento(departamento.departamento_id)"
+            >
+              Delete
+            </button>
+          </td>
+        </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</main>

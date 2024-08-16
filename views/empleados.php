@@ -72,11 +72,11 @@
                             <input type="email" class="form-control" name="email" id="email">
                         </div>
                         <div class="form-group">
-                            <label for="Telefono">Telefono:</label>
+                            <label for="telefono">Telefono:</label>
                             <input type="text" class="form-control" name="telefono" id="telefono">
                         </div>
                         <div class="form-group mt-2">
-                            <label for="Cedula">Departamento:</label>
+                            <label for="departamento_id">Departamento:</label>
                             <select name="departamento_id" id="departamento_id" class="form-control">
                             </select>
                         </div>
